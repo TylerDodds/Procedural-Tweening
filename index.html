@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Procedural-Tweening</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGLExport.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content" style="width: 960px;">
+		<div id="gameContainer" style="width: 960px; height: 600px">
+		</div>
+		<div class="footer">
+			<div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+			<!-- <div class="title">Procedural-Tweening</div> -->
+		</div>
+	  <div class="information">
+		<h2>Procedural Tweening</h2>
+		<h4>Overview</h4>
+		<p>
+		<i>Procedural Tweening</i> allows easing/tweening of a value toward a target over time. Unlike traditional interpolation-based methods, this type of tweening can respond continuously to a new target value being assigned at any time.
+		</p>
+		<br>
+		<h4>IValueTweenable and IDerivativeTweenable</h4>
+		<p>
+		These interfaces define requirements for a value type and its derivative type to be procedurally tweenable. For simple types, such as floating-point types and 2D/3D vectors, the derivative type is the same as the value type. For other value types, it can be difference; for instance, quaternion value types (representing rotations) have a derivative of angular velocity, which is a three-dimensional (pseudo)vector.
+		</p>
+		<br>
+		<p>
+		Unity examples provided: floating-point (real) values, 2D and 3D vectors, quaternions, and 2D vectors periodic within the unit square.
+		</p>
+		<br>
+		<h4>IVelocityTween and IAccelerationTween</h4>
+		<p>
+		These interfaces define the tweening functions that act on the values to be tweened. They specify the velocity or acceleration of the value at any point in time, respectively.
+		</p>
+		<br>
+		<p>
+		Unity examples provided: exponential damping, finite-time damping, infinite-time damping, damped oscillator, damped bouncing oscillator.
+		</p>
+	  </div>
+    </div>
+  </body>
+</html>
