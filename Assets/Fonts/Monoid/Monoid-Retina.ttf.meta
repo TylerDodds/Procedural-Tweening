@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 346f6afa8294f32428bbd8416979e993
+timeCreated: 1493877732
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Monoid
+  fontNames:
+  - Monoid
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2158ae2d27666a14281c430e054dc246, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
